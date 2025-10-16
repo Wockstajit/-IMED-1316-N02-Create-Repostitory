@@ -8,7 +8,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
 
-        fetch('/js/components/header.html')
+        fetch('/components/header.html')
         .then(response => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -19,8 +19,8 @@ class Header extends HTMLElement {
           console.log('Document content:', data);
           // Further processing of the document content
         
-          //var globalData = data;
-          this.innerHTML = data;
+          var globalData = data;
+          this.innerHTML = globalData;
         
         })
         .catch(error => {
