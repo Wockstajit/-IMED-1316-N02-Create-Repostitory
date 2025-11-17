@@ -14,6 +14,10 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!-- Animate.css for quick effects -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <style>
       h1 {
         display: none;
@@ -87,7 +91,7 @@
       <!-- End Clip Path -->
 
       <!-- Begin First Paragraph -->
-      <div class="container paragraph-one">
+      <div class="container paragraph-one animate-on-scroll">
         <div class="row">
           <div class="col-12">
             <p>
@@ -101,11 +105,26 @@
       </div>
       <!-- End First Paragraph -->
 
+      <!-- Begin Lottie Showcase -->
+      <div class="container lottie-showcase animate-on-scroll">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Motion that keeps your hero alive</h2>
+            <p>We used a Lottie animation to bring subtle motion into the hero section. You can grab the <a href="https://help.lottiefiles.com/hc/en-us/articles/43330871491481-LottieFiles-Education-Plan" target="_blank" rel="noreferrer">LottieFiles Education plan</a> and add your own assets.</p>
+            <p class="small">Every animation you drop in follows the same HTML structure; just include the CDN once and point to the JSON. The resource link above gives you student access if you need more premium assets.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <lottie-player class="animate__animated animate__pulse" src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json" background="transparent" speed="1" style="width: 320px; height: 320px;" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+      <!-- End Lottie Showcase -->
+
       <!-- Begin Headshot -->
       <div class="container text-center headshots">
         <div class="row">
           <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="/images/square/person-1.jpg" class="cropped" alt="Person 1" />
+            <img src="images/square/person-1.jpg" class="cropped" alt="Person 1" />
             <br />
             <blockquote>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit. Et sit incidunt maiores porro.
@@ -113,7 +132,7 @@
             </blockquote>
           </div>
           <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="/images/square/person-2.jpg" class="cropped" alt="Person 1" />
+            <img src="images/square/person-2.jpg" class="cropped" alt="Person 1" />
             <br />
             <blockquote>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit. Et sit incidunt maiores porro.
@@ -121,7 +140,7 @@
             </blockquote>
           </div>
           <div class="col col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="/images/square/person-3.jpg" class="cropped" alt="Person 1" />
+            <img src="images/square/person-3.jpg" class="cropped" alt="Person 1" />
             <br />
             <blockquote>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit. Et sit incidunt maiores porro.
@@ -145,6 +164,12 @@
 
       <!-- Local JS File with Footer -->
       <script src="components/js/footer.js"></script>
+
+      <!-- Lottie Player CDN -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+      <!-- Custom scripts -->
+      <script src="js/scripts.js"></script>
     </section>
   </body>
 </html>

@@ -1,1 +1,52 @@
 log.txt
+
+# Local development server files
+*.log
+server.log
+http-server.log
+
+# Node.js (if using http-server)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python cache (if using Python http.server)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Code review documentation
+CODE_REVIEW.md
+
+# School stuff folder
+school stuff/
+school-stuff/
+schoolstuff/
+
+# Local helpers/tests
+run-local.bat
+TROUBLESHOOTING.md
+test-header.html
+
+# Design/mood board exports
+Mood board/
