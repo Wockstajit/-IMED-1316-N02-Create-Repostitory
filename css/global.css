@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Orbitron:wght@400;500&display=swap');
+
+:root {
+  --silver: #d7d7e3;
+  --chrome: #bfc4d9;
+  --lavender: #c9b8ff;
+  --sector: #6c6d8c;
+  --white-glow: #f3f6ff;
+  --glass-border: rgba(255, 255, 255, 0.85);
+  --text-color: #11132a;
+  --panel-shadow: 0 15px 40px rgba(108, 109, 140, 0.35);
+  --grid-light: rgba(255, 255, 255, 0.12);
+  --fontFamily: 'Space Grotesk', 'Orbitron', sans-serif;
+  --displayFont: 'Orbitron', 'Space Grotesk', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgba(201, 184, 255, 0.25), transparent 45%),
+    linear-gradient(120deg, #f3f6ff, #d7d7e3 50%, #bfc4d9);
+  color: var(--text-color);
+  font-family: var(--fontFamily);
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent 40%, rgba(255, 255, 255, 0.2) 60%);
+  background-size: 120px 120px, 60px 60px;
+  mix-blend-mode: screen;
+  opacity: 0.35;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 40%),
+    url('../images/background-image.jpg');
+  background-size: cover;
+  opacity: 0.25;
+  pointer-events: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
